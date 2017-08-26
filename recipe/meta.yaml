@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "2.13.5" %}
-{% set sha256 = "e5f99ee812c98231969d3a8c34285d1950ee67c4be2a7ad17391e68129f9b75b" %}
+{% set version = "2.13.6" %}
+{% set sha256 = "4ed81aa8716245d406aa4282703655298132976c6165104978fe205fc917a172" %}
 
 package:
   name: {{ name|lower }}
