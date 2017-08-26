@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "2.13.4" %}
-{% set sha256 = "2e1dada41f94aaea7621a1a940b6e62bb7d5f73b9c42fbbb5000c638a28dc230" %}
+{% set version = "2.13.6" %}
+{% set sha256 = "4ed81aa8716245d406aa4282703655298132976c6165104978fe205fc917a172" %}
 
 package:
   name: {{ name|lower }}
@@ -12,18 +12,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 4
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - pytest-runner 
+    - pytest-runner
   run:
     - python
     - h5py
-    - matplotlib
+    - matplotlib 2.*
     - numpy
     - python-dateutil
     - pytz
@@ -35,7 +35,7 @@ test:
     - WrightTools
 
 about:
-  home: https://github.com/wright-group/WrightTools
+  home: http://wright.tools/
   license: MIT
   license_family: MIT
   license_file: LICENSE
