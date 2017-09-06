@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "2.13.6" %}
-{% set sha256 = "4ed81aa8716245d406aa4282703655298132976c6165104978fe205fc917a172" %}
+{% set version = "2.13.7" %}
+{% set sha256 = "d85496dfe7917b7081ca57a7bb6c6c8af833a767e3547fc3798fa8665d31578c" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 5
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
