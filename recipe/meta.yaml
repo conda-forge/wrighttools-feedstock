@@ -35,8 +35,6 @@ requirements:
 test:
   imports:
     - WrightTools
-  commands:
-    - python setup.py test
 
 about:
   home: http://wright.tools/
