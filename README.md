@@ -1,7 +1,7 @@
 About wrighttools
 =================
 
-Home: https://github.com/wright-group/WrightTools
+Home: http://wright.tools/
 
 Package license: MIT
 
@@ -14,9 +14,7 @@ Summary: Tools for loading, processing, and plotting multidimensional spectrosco
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wrighttools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wrighttools-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/wrighttools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wrighttools-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wrighttools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wrighttools-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/wrighttools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wrighttools-feedstock)
 
 Current release info
 ====================
