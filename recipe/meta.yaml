@@ -1,18 +1,17 @@
 {% set name = "WrightTools" %}
-{% set version = "2.13.7" %}
-{% set sha256 = "d85496dfe7917b7081ca57a7bb6c6c8af833a767e3547fc3798fa8665d31578c" %}
+{% set version = "2.13.8" %}
+{% set sha256 = "66864fe53842fced4bb5f05508c0bd4673b53effe78030bd73040f2f9e6df825" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 7
+  number: 0
   noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
