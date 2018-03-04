@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "2.13.9" %}
-{% set sha256 = "aa33b3fe585f757bfc33d18f6be8ca8fd00aa2b2cadd1faeeab5008f12d0e7f9" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "69f4f49ace213016c58a95269f2ff55907167af4b12f6b7f8bf25b6ef3b1d624" %}
 
 package:
   name: {{ name|lower }}
@@ -17,20 +17,22 @@ build:
 
 requirements:
   build:
-    - python
+    - python >= 3.5
     - setuptools
     - pytest-runner
   run:
-    - python
+    - python >= 3.5
     - appdirs
-    - h5py
+    - h5py >= 2.7.0
     - imageio
     - matplotlib 2.*
+    - numexpr
     - numpy
     - python-dateutil
     - pytz
     - scipy
     - pytest-runner
+    - tidy_headers
 
 test:
   imports:
