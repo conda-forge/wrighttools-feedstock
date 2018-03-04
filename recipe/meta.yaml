@@ -11,19 +11,19 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
-    - python >= 3.5
+    - "python>=3.5"
     - setuptools
     - pytest-runner
   run:
-    - python >= 3.5
+    - "python>=3.5"
     - appdirs
-    - h5py >= 2.7.0
+    - "h5py>=2.7.0"
     - imageio
     - matplotlib 2.*
     - numexpr
