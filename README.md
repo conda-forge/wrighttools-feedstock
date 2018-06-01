@@ -14,12 +14,15 @@ Summary: Tools for loading, processing, and plotting multidimensional spectrosco
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/wrighttools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wrighttools-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/wrighttools-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/wrighttools-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wrighttools/badges/version.svg)](https://anaconda.org/conda-forge/wrighttools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wrighttools/badges/downloads.svg)](https://anaconda.org/conda-forge/wrighttools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-wrighttools-green.svg)](https://anaconda.org/conda-forge/wrighttools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/wrighttools.svg)](https://anaconda.org/conda-forge/wrighttools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/wrighttools.svg)](https://anaconda.org/conda-forge/wrighttools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/wrighttools.svg)](https://anaconda.org/conda-forge/wrighttools) |
 
 Installing wrighttools
 ======================
@@ -64,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
