@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "3.0.4" %}
-{% set sha256 = "06927baf644f2e95a675e2be87c19205e327011b85ee8019a1c82e4b3e247c74" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "fc3557dd807a956d1d53be703015d459dc9d0e9305becc7a6776577cdcec7578" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,6 @@ requirements:
     - python-dateutil
     - pytz
     - scipy
-    - pytest-runner
     - tidy_headers
 
 test:
