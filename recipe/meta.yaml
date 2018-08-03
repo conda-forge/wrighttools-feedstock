@@ -34,7 +34,7 @@ requirements:
     - pytz
     - scikit-image
     - scipy
-    - tidy_headers
+    - tidy_headers >=0.3.0
 
 test:
   imports:
