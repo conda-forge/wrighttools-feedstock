@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "fc3557dd807a956d1d53be703015d459dc9d0e9305becc7a6776577cdcec7578" %}
+{% set version = "3.1.1" %}
+{% set sha256 = "cbb6678b9dadafbd2c7c5e85186d490d7421c3aa26bae6954516bfde8eeef405" %}
 
 package:
   name: {{ name|lower }}
@@ -27,11 +27,12 @@ requirements:
     - python
     - h5py >=2.7.0
     - imageio
-    - matplotlib 2.*
+    - matplotlib >=2.2
     - numexpr
     - numpy
     - python-dateutil
     - pytz
+    - scikit-image
     - scipy
     - tidy_headers
 
