@@ -13,19 +13,18 @@ source:
 build:
   noarch: python
   number: 0
-  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - wt-tree = WrightTools.__main__:wt_tree
 
 requirements:
   build:
-    - python
+    - python >=3.5
     - pip
     - setuptools
     - pytest-runner
   run:
-    - python
+    - python >=3.5
     - h5py >=2.7.0
     - imageio
     - matplotlib >=2.2
