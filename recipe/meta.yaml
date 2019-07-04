@@ -12,8 +12,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - wt-tree = WrightTools.__main__:wt_tree
 
