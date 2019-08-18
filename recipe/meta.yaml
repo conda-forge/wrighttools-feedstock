@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "3.2.2" %}
-{% set sha256 = "52da04b1e33866ec5e9b123503c83d4bb9f61946d661e157bbde7404ba698b89" %}
+{% set version = "3.2.3" %}
+{% set sha256 = "32c742f96daf38bbfbe6dca4ac94715164ba0a725e61e0d6afa782fcba7d9738" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - wt-tree = WrightTools.__main__:wt_tree
