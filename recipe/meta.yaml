@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "3.2.2" %}
-{% set sha256 = "52da04b1e33866ec5e9b123503c83d4bb9f61946d661e157bbde7404ba698b89" %}
+{% set version = "3.2.3" %}
+{% set sha256 = "32c742f96daf38bbfbe6dca4ac94715164ba0a725e61e0d6afa782fcba7d9738" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - wt-tree = WrightTools.__main__:wt_tree
 
@@ -24,15 +24,13 @@ requirements:
     - setuptools
     - pytest-runner
   run:
-    - python >=3.5
+    - python >=3.6
     - h5py >=2.7.0
     - imageio
     - matplotlib >=2.2
     - numexpr
     - numpy >=1.15.0
     - python-dateutil
-    - pytz
-    - scikit-image
     - scipy
     - tidy_headers >=0.3.0
 
