@@ -5,7 +5,7 @@ Home: http://wright.tools/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Tools for loading, processing, and plotting multidimensional spectroscopy data.
 
