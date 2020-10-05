@@ -27,7 +27,7 @@ requirements:
     - python >=3.6
     - h5py >=2.7.0
     - imageio
-    - matplotlib-base >=3.0
+    - matplotlib-base >=3.3
     - numexpr
     - numpy >=1.15.0
     - python-dateutil
