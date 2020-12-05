@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "3.3.2" %}
-{% set sha256 = "bef0cd65dcb7aa30bd3bb40e7dc3e1b1de17b326a0e4bad499e5d12d6df495de" %}
+{% set version = "3.3.3" %}
+{% set sha256 = "6d96d1c5f39b7d4ed2c57256c1408a74e843793853668c92637569435b2c388e" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
     - wt-tree = WrightTools.__main__:wt_tree
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
     - setuptools
