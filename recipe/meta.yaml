@@ -31,8 +31,9 @@ requirements:
     - numexpr
     - numpy >=1.15.0
     - python-dateutil
+    - pint
     - scipy
-    - tidy_headers >=0.3.0
+    - tidy_headers >=1.0
 
 test:
   imports:
