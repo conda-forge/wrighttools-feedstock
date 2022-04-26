@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "3.2.3" %}
-{% set sha256 = "32c742f96daf38bbfbe6dca4ac94715164ba0a725e61e0d6afa782fcba7d9738" %}
+{% set version = "3.4.3" %}
+{% set sha256 = "4227c7e2b1aa60ce87c2584443145ca9341d1b6cbe03ccad5e9c709dacc475ed" %}
 
 package:
   name: {{ name|lower }}
@@ -13,12 +13,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - wt-tree = WrightTools.__main__:wt_tree
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
     - setuptools
@@ -27,12 +27,13 @@ requirements:
     - python >=3.6
     - h5py >=2.7.0
     - imageio
-    - matplotlib >=2.2
+    - matplotlib-base >=3.3
     - numexpr
     - numpy >=1.15.0
     - python-dateutil
+    - pint
     - scipy
-    - tidy_headers >=0.3.0
+    - tidy_headers >=1.0
 
 test:
   imports:
@@ -49,3 +50,6 @@ extra:
   recipe-maintainers:
     - untzag
     - ksunden
+    - kameyer226
+    - ddkohler
+    - darienmorrow
