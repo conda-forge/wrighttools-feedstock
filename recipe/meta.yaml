@@ -1,6 +1,6 @@
 {% set name = "WrightTools" %}
-{% set version = "3.4.3" %}
-{% set sha256 = "4227c7e2b1aa60ce87c2584443145ca9341d1b6cbe03ccad5e9c709dacc475ed" %}
+{% set version = "3.4.4" %}
+{% set sha256 = "ca45d97eddb3887824a7593cd86dcb34b13b0fcb4b4637565d8227b72550d057" %}
 
 package:
   name: {{ name|lower }}
@@ -19,10 +19,9 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
     - setuptools
-    - pytest-runner
   run:
     - python >=3.6
     - h5py >=2.7.0
