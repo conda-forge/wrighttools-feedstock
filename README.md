@@ -1,11 +1,11 @@
-About wrighttools
-=================
+About wrighttools-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wrighttools-feedstock/blob/main/LICENSE.txt)
 
 Home: http://wright.tools/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wrighttools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for loading, processing, and plotting multidimensional spectroscopy data.
 
