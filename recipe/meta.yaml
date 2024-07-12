@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/34/6e/e99283a8175e5cbf92a967946aa882794c51a094131814615d99ba34cfd7/wrighttools-3.5.3.tar.gz
   sha256: {{ sha256 }}
 
 build:
