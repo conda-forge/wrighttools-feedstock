@@ -16,14 +16,14 @@ build:
     - wt-convert=WrightTools.cli._units:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - h5py
     - imageio >=2.28.0
     - matplotlib-base >=3.4.0
@@ -45,6 +45,7 @@ test:
     - wt-convert --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://wright.tools/
