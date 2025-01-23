@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wrighttools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wrighttools-{{ version }}.tar.gz
   sha256: 5ce5c8fba9c8d6b3caa6fcc759f7f40b7f9b41ec541d79af1395e6d1aa46a64d
 
 build:
