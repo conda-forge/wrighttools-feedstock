@@ -1,5 +1,6 @@
 {% set name = "wrighttools" %}
 {% set version = "3.5.5" %}
+{% set python_min = "3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -19,10 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.7
+    - python >= {{ python_min }}
     - h5py
     - imageio >=2.28.0
     - matplotlib-base >=3.4.0
@@ -43,6 +45,7 @@ test:
     - wt5 --help
     - wt-convert --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
