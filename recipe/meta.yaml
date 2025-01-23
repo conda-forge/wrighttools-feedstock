@@ -1,5 +1,6 @@
 {% set name = "wrighttools" %}
 {% set version = "3.5.5" %}
+{% set sha256 = "c0b181416d339d01bdb6ba68ad4f453d30f5bb6b90b2910eb869d9467fb3b106" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wrighttools-{{ version }}.tar.gz
-  sha256: c0b181416d339d01bdb6ba68ad4f453d30f5bb6b90b2910eb869d9467fb3b106
+  sha256: {{ sha256 }}
 
 build:
   entry_points:
