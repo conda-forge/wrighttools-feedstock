@@ -1,13 +1,13 @@
-{% set name = "WrightTools" %}
-{% set version = "3.5.3" %}
-{% set sha256 = "8f2da35cd8c8b505fcbbb9ea6fcc9a3405b86e8b8ae66254a7ace3a7af6a82e2" %}
+{% set name = "wrighttools" %}
+{% set version = "3.5.5" %}
+{% set sha256 = "c0b181416d339d01bdb6ba68ad4f453d30f5bb6b90b2910eb869d9467fb3b106" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/34/6e/e99283a8175e5cbf92a967946aa882794c51a094131814615d99ba34cfd7/wrighttools-3.5.3.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wrighttools-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -22,18 +22,19 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - h5py
     - imageio >=2.28.0
     - matplotlib-base >=3.4.0
     - numexpr
-    - numpy >=1.15.0,<2.0
+    - numpy >=1.15.0
     - pint
     - python-dateutil
     - scipy
     - click
-    - tidy_headers >=1.0.0
+    - tidy_headers >=1.0.4
     - rich
 
 test:
@@ -44,14 +45,14 @@ test:
     - wt5 --help
     - wt-convert --help
   requires:
-    - pip
     - python {{ python_min }}
+    - pip
 
 about:
-  home: http://wright.tools/
+  home: http://wright.tools
+  summary: Tools for loading, processing, and plotting multidimensional spectroscopy data.
   license: MIT
   license_file: LICENSE.txt
-  summary: Tools for loading, processing, and plotting multidimensional spectroscopy data.
 
 extra:
   recipe-maintainers:
