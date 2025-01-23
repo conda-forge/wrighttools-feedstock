@@ -23,7 +23,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >= {{ python_min }}
+    - python >={{ python_min }}
     - h5py
     - imageio >=2.28.0
     - matplotlib-base >=3.4.0
