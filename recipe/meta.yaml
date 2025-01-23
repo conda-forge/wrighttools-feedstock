@@ -46,7 +46,6 @@ test:
   requires:
     - python {{ python_min }}
     - pip
-    - python {{ python_min }}
 
 about:
   home: http://wright.tools
