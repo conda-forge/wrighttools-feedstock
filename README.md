@@ -3,7 +3,7 @@ About wrighttools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wrighttools-feedstock/blob/main/LICENSE.txt)
 
-Home: http://wright.tools/
+Home: http://wright.tools
 
 Package license: MIT
 
