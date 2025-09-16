@@ -1,6 +1,6 @@
 {% set name = "wrighttools" %}
-{% set version = "3.5.5" %}
-{% set sha256 = "c0b181416d339d01bdb6ba68ad4f453d30f5bb6b90b2910eb869d9467fb3b106" %}
+{% set version = "3.6.0" %}
+{% set sha256 = "4e19d79fd61355373dbdee180df5ba92364b0a5828c921d9be6ed762b71dd2ad" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ build:
     - wt-convert=WrightTools.cli._units:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
